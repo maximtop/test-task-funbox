@@ -8,26 +8,36 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "lint": "eslint ."
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.1",
+    "enzyme": "^3.7.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.6.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.7.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-hot-loader": "^4.3.12"
