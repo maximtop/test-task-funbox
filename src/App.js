@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import Points from './Components/Points';
+import Map from './Components/Map';
+import Input from './Components/Input';
 
-// TODO find out how to handle css in tests
-// import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1> Hello, Funbox! </h1>
-        <h2> I would like to work with you</h2>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <h1>Test task for Funbox</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <Input />
+            <Points />
+          </div>
+          <div className="col-md-6">
+            <Map />
+          </div>
+        </div>
       </div>
     );
   }

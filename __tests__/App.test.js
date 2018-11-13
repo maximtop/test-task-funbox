@@ -8,5 +8,5 @@ Enzyme.configure({ adapter: new Adapter() });
 test('App is rendering', () => {
   const app = shallow(<App />);
 
-  expect(app.hasClass('App')).toEqual(true);
+  expect(app.hasClass('container')).toEqual(true);
 });
