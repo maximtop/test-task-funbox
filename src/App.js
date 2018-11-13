@@ -16,11 +16,11 @@ class App extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-4">
             <Input />
             <Points />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-8">
             <Map />
           </div>
         </div>
